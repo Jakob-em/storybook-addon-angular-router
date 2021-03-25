@@ -1,3 +1,15 @@
+# v0.0.7 (Thu Mar 25 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Fix storybook build warning ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v0.0.6 (Thu Mar 25 2021)
 
 #### ⚠️ Pushed to `main`
