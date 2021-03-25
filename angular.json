@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "projects": {
+    "library": {
+      "projectType": "storybook",
+      "root": "",
+      "sourceRoot": "stories",
+      "prefix": "sb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "tsconfig.json"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "storybook"
+}

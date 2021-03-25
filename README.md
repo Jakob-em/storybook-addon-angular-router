@@ -40,7 +40,7 @@ Which, along with the addon itself, are registered in `src/preset/manager.js`.
 
 Managing State and interacting with a story:
 
-- `src/withGlobals.js` & `src/Tool.js` demonstrates how to use `useGlobals` to manage global state and modify the contents of a Story.
+- `src/withAngularRouter.js` & `src/Tool.js` demonstrates how to use `useGlobals` to manage global state and modify the contents of a Story.
 - `src/withRoundTrip.js` & `src/Panel.js` demonstrates two-way communication using channels.
 - `src/Tab.js` demonstrates how to use `useParameter` to access the current story's parameters.
 

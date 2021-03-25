@@ -21,6 +21,13 @@ h1 {
   vertical-align: top;
 }
 
-button + button {
+a {
   margin-left: 10px;
+  cursor: pointer;
+  color: #333333;
+  text-decoration: none;
+}
+
+a.active {
+  text-decoration: underline;
 }
