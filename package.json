@@ -29,6 +29,7 @@
     "release": "npm run build && auto shipit"
   },
   "devDependencies": {
+    "@angular/cli": "11.2.6",
     "@angular/router": "11.2.6",
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
