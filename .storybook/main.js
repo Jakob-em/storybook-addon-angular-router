@@ -5,7 +5,8 @@ module.exports = {
     ],
     addons: [
         "../preset.js",
+        "@storybook/addon-docs",
+        "@storybook/addon-controls",
         "@storybook/addon-actions",
-        "@storybook/addon-controls"
     ],
 };
