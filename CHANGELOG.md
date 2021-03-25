@@ -1,3 +1,15 @@
+# v0.0.2 (Thu Mar 25 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Adjust build script ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v0.0.1 (Thu Mar 25 2021)
 
 #### ⚠️ Pushed to `main`
