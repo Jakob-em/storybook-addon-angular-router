@@ -23,7 +23,7 @@ export class ActionLoggingRouter {
     }
 
     serializeUrl(tree) {
-        return tree.commands.join('/')
+        return this._joinCommands(tree)
     }
 
     createUrlTree(commands, extras = {}) {
@@ -35,19 +35,24 @@ export class ActionLoggingRouter {
             return false
         }
         if (excact) {
-            return tree.commands.join('/') === this.activePath
+            return this._joinCommands(tree) === this.activePath
         }
-        return tree.commands.join('/').startsWith(this.activePath);
+        return this._joinCommands(tree).startsWith(this.activePath);
     }
+
 
     navigate(commands, extras) {
         action('[router] navigate')({commands, extras})
-        return Promise.resolve();
+        return Promise.resolve(true);
     }
 
     navigateByUrl(url, extras) {
         action('[router] navigateByUrl')({url, extras})
-        return Promise.resolve();
+        return Promise.resolve(true);
+    }
+
+    _joinCommands(tree) {
+        return tree.commands.join('/');
     }
 
 }

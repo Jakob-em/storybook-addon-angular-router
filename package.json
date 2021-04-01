@@ -22,7 +22,7 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "build": "babel ./src --out-dir ./dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "start": "concurrently \"npm run storybook -- --no-manager-cache --quiet\" \"npm run build -- --watch\"",
     "build-storybook": "npm run build && build-storybook",
@@ -50,6 +50,7 @@
     "auto": "^10.24.1",
     "babel-loader": "^8.2.2",
     "concurrently": "^6.0.0",
+    "jest": "^26.6.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
