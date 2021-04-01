@@ -1,12 +1,8 @@
 # v1.0.0 (Thu Apr 01 2021)
 
-#### 💥 Breaking Change
+#### Improvements ✨
 
 - Add documentation [#2](https://github.com/Jakob-em/storybook-addon-angular-router/pull/2) ([@Jakob-em](https://github.com/Jakob-em))
-
-#### Authors: 1
-
-- Jakob ([@Jakob-em](https://github.com/Jakob-em))
 
 ---
 
