@@ -1,3 +1,15 @@
+# v0.0.8 (Thu Apr 01 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Add mdx example ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v0.0.7 (Thu Mar 25 2021)
 
 #### ⚠️ Pushed to `main`
