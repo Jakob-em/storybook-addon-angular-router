@@ -1,3 +1,15 @@
+# v0.1.0 (Thu Apr 01 2021)
+
+#### 🚀 Enhancement
+
+- Upgrade storybook to 6.2.1 [#1](https://github.com/Jakob-em/storybook-addon-angular-router/pull/1) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v0.0.8 (Thu Apr 01 2021)
 
 #### ⚠️ Pushed to `main`
