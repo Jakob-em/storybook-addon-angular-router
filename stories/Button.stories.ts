@@ -1,6 +1,8 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import {Meta, Story} from '@storybook/angular/types-6-0';
 import Button from './button.component';
+import {moduleMetadata} from '@storybook/angular';
+import {RouterTestingModule} from '@angular/router/testing';
 
 export default {
     title: 'Example/Navigation Button',
@@ -17,3 +19,10 @@ const Template: Story<Button> = (args: Button) => ({
 
 export const Default = Template.bind({});
 
+export const DisabledPlugin = Template.bind({});
+DisabledPlugin.parameters = {
+    options: {angularRouter: {disable: true}}
+}
+DisabledPlugin.decorators = [
+    moduleMetadata({imports: [RouterTestingModule]})
+]
