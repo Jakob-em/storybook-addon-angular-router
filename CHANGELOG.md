@@ -1,3 +1,16 @@
+# v0.1.2 (Thu Apr 01 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Remove icon from package.json ([@Jakob-em](https://github.com/Jakob-em))
+- Add tests to ci ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v0.1.1 (Thu Apr 01 2021)
 
 #### ⚠️ Pushed to `main`
