@@ -1,106 +1,50 @@
-# Storybook Addon Kit
+# Angular Router Storybook Addon
+[![Storybook](https://raw.githubusercontent.com/storybookjs/brand/master/badge/badge-storybook.svg?sanitize=true)](https://storybook.js.org)
+![npm](https://img.shields.io/npm/v/storybook-addon-angular-router)
+[![Release](https://github.com/Jakob-em/storybook-addon-angular-router/actions/workflows/release.yml/badge.svg)](https://github.com/Jakob-em/storybook-addon-angular-router/actions/workflows/release.yml)
+![npm](https://img.shields.io/npm/dm/storybook-addon-angular-router)
 
-Simplify the creation of Storybook addons
+> A simple plugin to make working with the angular router
+in storybook easier
 
-- 📝 Live-editing in development
-- ⚛️ React/JSX support
-- 📦 Transpiling and bundling with Babel
-- 🏷 Plugin metadata
-- 🚢 Release management with [Auto](https://github.com/intuit/auto)
-- 🧺 Boilerplate and sample code
-
-## Getting Started
-
-Click the **Use this template** button to get started.
-
-![](https://user-images.githubusercontent.com/42671/106809879-35b32000-663a-11eb-9cdc-89f178b5273f.gif)
-
-Clone your repository and install dependencies.
-
-```sh
-npm install
+### How to use it
+Install the addon via npm:
+```shell
+npm i storybook-addon-angular-router
+```
+Add it to your storybook configuration:
+```js
+// .storybook/main.js
+module.exports = {
+    addons: ["storybook-addon-angular-router"],
+};
 ```
 
-### Development scripts
+Every call to `navivate` and `navigateByUrl` on the router is now logged in the aciton
+panel together with all parameters.
 
-- `npm run start` runs babel in watch mode and starts Storybook
-- `npm run build` build and package your addon code
+If you want to test the `routerLinkActive` directive in your story
+you can set the active route for the story like this:
 
-## What's included?
-
-![Demo](https://user-images.githubusercontent.com/42671/107857205-e7044380-6dfa-11eb-8718-ad02e3ba1a3f.gif)
-
-The addon code lives in `src`. It demonstrates all core addon related concepts. The three [UI paradigms](https://storybook.js.org/docs/react/addons/addon-types#ui-based-addons)
-
-- `src/Tool.js`
-- `src/Panel.js`
-- `src/Tab.js`
-
-Which, along with the addon itself, are registered in `src/preset/manager.js`.
-
-Managing State and interacting with a story:
-
-- `src/withAngularRouter.js` & `src/Tool.js` demonstrates how to use `useGlobals` to manage global state and modify the contents of a Story.
-- `src/withRoundTrip.js` & `src/Panel.js` demonstrates two-way communication using channels.
-- `src/Tab.js` demonstrates how to use `useParameter` to access the current story's parameters.
-
-Your addon might use one or more of these patterns. Feel free to delete unused code. Update `src/preset/manager.js` and `src/preset/preview.js` accordingly.
-
-Lastly, configure you addon name in `src/constants.js`.
-
-### Metadata
-
-Storybook addons are listed in the [catalog](https://storybook.js.org/addons) and distributed via npm. The catalog is populated by querying npm's registry for Storybook-specific metadata in `package.json`. This project has been configured with sample data. Learn more about available options in the [Addon metadata docs](https://storybook.js.org/docs/react/addons/addon-catalog#addon-metadata).
-
-## Release Management
-
-### Setup
-
-This project is configured to use [auto](https://github.com/intuit/auto) for release management. It generates a changelog and pushes it to both GitHub and npm. Therefore, you need to configure access to both:
-
-- [`NPM_TOKEN`](https://docs.npmjs.com/creating-and-viewing-access-tokens#creating-access-tokens) Create a token with both _Read and Publish_ permissions.
-- [`GH_TOKEN`](https://github.com/settings/tokens) Create a token with the `repo` scope.
-
-Then open your `package.json` and edit the following fields:
-
-- `name`
-- `author`
-- `repository`
-
-#### Local
-
-To use `auto` locally create a `.env` file at the root of your project and add your tokens to it:
-
-```bash
-GH_TOKEN=<value you just got from GitHub>
-NPM_TOKEN=<value you just got from npm>
+```js
+export const WithActiveLink = Template.bind({});
+WithActiveLink.args = {
+    angularRouter: {active: '/location/1'}
+};
 ```
 
-Lastly, **create labels on GitHub**. You’ll use these labels in the future when making changes to the package.
 
-```bash
-npx auto create-labels
+If you want to **disable** the plugin for a single story you can
+add the following parameter to your story:
+```js
+export const DisabledPlugin = Template.bind({});
+DisabledPlugin.parameters = {
+    options: {angularRouter: {disable: true}}
+}
 ```
 
-If you check on GitHub, you’ll now see a set of labels that `auto` would like you to use. Use these to tag future pull requests.
-
-#### GitHub Actions
-
-This template comes with GitHub actions already set up to publish your addon anytime someone pushes to your repository.
-
-Go to `Settings > Secrets`, click `New repository secret`, and add your `NPM_TOKEN`.
-
-### Creating a releasing
-
-To create a release locally you can run the following command, otherwise the GitHub action will make the release for you.
-
-```sh
-npm run release
-```
-
-That will:
-
-- Build and package the addon code
-- Bump the version
-- Push a release to GitHub and npm
-- Push a changelog to GitHub
+### How it works
+The plugin adds the `RouterTestingModule` and a custom
+`Router` implementation to your stories.
+The custom `Router` implementation provides
+only the most basic functionality needed to use it in your stories.
