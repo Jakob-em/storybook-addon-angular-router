@@ -21,14 +21,13 @@ const Template: Story<Header> = (args: Header) => ({
 });
 
 export const WithoutActive = Template.bind({});
-WithoutActive.args = {};
 
 export const WithActive = Template.bind({});
-WithActive.args = {
+WithActive.parameters = {
     angularRouter: {active: '/location/1'}
 };
 
 export const WithActivePartialMatch = Template.bind({});
-WithActivePartialMatch.args = {
+WithActivePartialMatch.parameters = {
     angularRouter: {active: '/location'}
 };

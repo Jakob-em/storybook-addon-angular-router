@@ -3,18 +3,18 @@ import {Router} from "@angular/router";
 import {ActionLoggingRouter} from "./actionLoggingRouter";
 import {RouterTestingModule} from "@angular/router/testing";
 import {ADDON_ID} from "./constants";
+import {makeDecorator} from "@storybook/addons";
 
-export const withAngularRouter = (storyFn, context) => {
-    const storyArgs = context.args[ADDON_ID]
-    const options = context?.parameters?.options
-    if (options && options[ADDON_ID]?.disable === true) {
-        return storyFn()
+
+export const withAngularRouter = makeDecorator({
+    name: 'withAngularRouter',
+    parameterName: ADDON_ID,
+    wrapper: (storyFn, context, {parameters}) => {
+        return moduleMetadata({
+            imports: [RouterTestingModule],
+            providers: [
+                {provide: Router, useValue: new ActionLoggingRouter(parameters?.active)}
+            ]
+        })(storyFn)
     }
-
-    return moduleMetadata({
-        imports: [RouterTestingModule],
-        providers: [
-            {provide: Router, useValue: new ActionLoggingRouter(storyArgs?.active)}
-        ]
-    })(storyFn)
-}
+})
