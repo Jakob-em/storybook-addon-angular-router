@@ -21,7 +21,7 @@ export const Default = Template.bind({});
 
 export const DisabledPlugin = Template.bind({});
 DisabledPlugin.parameters = {
-    options: {angularRouter: {disable: true}}
+    angularRouter: {disable: true}
 }
 DisabledPlugin.decorators = [
     moduleMetadata({imports: [RouterTestingModule]})
