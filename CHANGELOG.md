@@ -1,3 +1,15 @@
+# v1.1.0 (Sat Apr 03 2021)
+
+#### 🚀 Enhancement
+
+- Use parameter api [#3](https://github.com/Jakob-em/storybook-addon-angular-router/pull/3) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.0.0 (Thu Apr 01 2021)
 
 #### Improvements ✨
