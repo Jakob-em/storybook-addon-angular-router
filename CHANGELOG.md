@@ -1,3 +1,15 @@
+# v1.1.1 (Thu Apr 08 2021)
+
+#### 🐛 Bug Fix
+
+- Remove absolute version from peer deps [#4](https://github.com/Jakob-em/storybook-addon-angular-router/pull/4) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.1.0 (Sat Apr 03 2021)
 
 #### 🚀 Enhancement
