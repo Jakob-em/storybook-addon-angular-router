@@ -58,7 +58,7 @@
     "zone.js": "0.11.4"
   },
   "peerDependencies": {
-    "@angular/router": "11.2.7",
+    "@angular/router": "^11.2.7",
     "@storybook/addon-actions": "^6.2.1",
     "@storybook/addons": "^6.2.1",
     "@storybook/angular": "^6.2.1",
