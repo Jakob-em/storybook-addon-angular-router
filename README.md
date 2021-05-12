@@ -20,7 +20,7 @@ module.exports = {
 };
 ```
 
-Every call to `navivate` and `navigateByUrl` on the router is now logged in the aciton
+Every call to `navigate` and `navigateByUrl` on the router is now logged in the action
 panel together with all parameters.
 
 If you want to test the `routerLinkActive` directive in your story
