@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 // noinspection AngularMissingOrInvalidDeclarationInModule
 @Component({
-  selector: 'storybook-header',
+  selector: 'app-header',
   template: `<header>
     <div class="wrapper">
       <div>

@@ -21,12 +21,10 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Run tests
-        run: |
-          npm run test
+        run: npm run test
 
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          npm run release
+        run: npm run release
