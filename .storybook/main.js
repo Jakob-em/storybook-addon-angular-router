@@ -12,11 +12,4 @@ module.exports = {
         "@storybook/addon-controls",
         "@storybook/addon-actions",
     ],
-    webpackFinal: async (config) => {
-      if (!config.resolve.fallback) {
-        config.resolve.fallback = {};
-      }
-      config.resolve.fallback.crypto = false;
-      return config;
-  },
 };
