@@ -1,3 +1,15 @@
+# v1.2.0 (Fri Jun 25 2021)
+
+#### 🚀 Enhancement
+
+- Upgrade to angular 12 [#5](https://github.com/Jakob-em/storybook-addon-angular-router/pull/5) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.1.1 (Thu Apr 08 2021)
 
 #### 🐛 Bug Fix
