@@ -3,7 +3,7 @@ import {Router} from '@angular/router';
 
 // noinspection AngularMissingOrInvalidDeclarationInModule
 @Component({
-    selector: 'storybook-button',
+    selector: 'app-button',
     template: `
         <button
                 (click)="navigate()"
