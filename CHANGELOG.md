@@ -1,3 +1,15 @@
+# v1.3.0 (Fri Jun 25 2021)
+
+#### 🚀 Enhancement
+
+- Keep angular 11 compatibility [#6](https://github.com/Jakob-em/storybook-addon-angular-router/pull/6) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.2.0 (Fri Jun 25 2021)
 
 #### 🚀 Enhancement
