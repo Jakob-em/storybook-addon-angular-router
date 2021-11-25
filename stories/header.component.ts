@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 // noinspection AngularMissingOrInvalidDeclarationInModule
 @Component({

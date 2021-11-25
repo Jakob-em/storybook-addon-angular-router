@@ -1,13 +1,11 @@
 import {action} from "@storybook/addon-actions";
 import {of} from "rxjs";
-import {UrlTree} from "@angular/router";
 
 // noinspection JSUnusedGlobalSymbols
 export class ActionLoggingRouter {
 
     constructor(activePath) {
         this.activePath = activePath;
-        new UrlTree()
     }
 
     get navigated() {
@@ -19,7 +17,7 @@ export class ActionLoggingRouter {
     }
 
     get events() {
-        return of()
+        return of(undefined)
     }
 
     serializeUrl(tree) {
