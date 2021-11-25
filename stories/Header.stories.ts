@@ -8,7 +8,6 @@ export default {
     argTypes: {
         exact: {
             name: 'exact',
-            defaultValue: false,
             description:'exact match options of the routerLinkActive directive',
             control: {type :'boolean'}
         }
@@ -16,7 +15,6 @@ export default {
 } as Meta;
 
 const Template: Story<Header> = (args: Header) => ({
-    component: Header,
     props: args,
 });
 

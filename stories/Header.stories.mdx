@@ -1,10 +1,9 @@
 import Header from './header.component';
-import {Meta, Story} from "@storybook/addon-docs/blocks";
+import {Meta, Story} from "@storybook/addon-docs";
 
 <Meta component={Header} title="Example/Header Mdx" parameters={{controls: {hideNoControlsWarning: true}}}/>
 
 export const Template = (args) => ({
-    component: Header,
     props: args
 });
 
