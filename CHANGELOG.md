@@ -1,3 +1,15 @@
+# v1.3.1 (Wed Dec 01 2021)
+
+#### 🐛 Bug Fix
+
+- Support angular 13 [#9](https://github.com/Jakob-em/storybook-addon-angular-router/pull/9) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.3.0 (Fri Jun 25 2021)
 
 #### 🚀 Enhancement
