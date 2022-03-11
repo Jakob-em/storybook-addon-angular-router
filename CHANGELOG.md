@@ -1,3 +1,15 @@
+# v1.5.0 (Fri Mar 11 2022)
+
+#### 🚀 Enhancement
+
+- Use activePath as url [#12](https://github.com/Jakob-em/storybook-addon-angular-router/pull/12) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.4.0 (Wed Dec 01 2021)
 
 #### 🚀 Enhancement
