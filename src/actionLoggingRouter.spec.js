@@ -39,6 +39,10 @@ describe('ActionLoggingRouter', () => {
             .toEqual('first/second')
     });
 
+    it('should return activePath as url', () => {
+        expect(router.url).toEqual('path/nested');
+    });
+
     it('should return parameters as tree', () => {
         expect(router.createUrlTree(['first', 'second'], {option: true}))
             .toStrictEqual({
