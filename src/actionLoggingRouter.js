@@ -20,6 +20,10 @@ export class ActionLoggingRouter {
         return of(undefined)
     }
 
+    get url() {
+        return this.activePath;
+    }
+
     serializeUrl(tree) {
         return this._joinCommands(tree)
     }
