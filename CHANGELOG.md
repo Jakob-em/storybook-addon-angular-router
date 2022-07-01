@@ -2,7 +2,7 @@
 
 #### 🚀 Enhancement
 
-- Update dependencies [#14](https://github.com/Jakob-em/storybook-addon-angular-router/pull/14) ([@Jakob-em](https://github.com/Jakob-em))
+- Update to Angular 14 [#14](https://github.com/Jakob-em/storybook-addon-angular-router/pull/14) ([@Jakob-em](https://github.com/Jakob-em))
 
 #### Authors: 1
 
