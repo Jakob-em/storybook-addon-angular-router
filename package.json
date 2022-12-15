@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-angular-router",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Addon to enable logging and mocking for the angular router in storybook",
   "keywords": [
     "storybook-addons",
