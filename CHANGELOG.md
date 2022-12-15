@@ -1,3 +1,15 @@
+# v1.7.1 (Thu Dec 15 2022)
+
+#### 🐛 Bug Fix
+
+- Fix peer dependency format [#17](https://github.com/Jakob-em/storybook-addon-angular-router/pull/17) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.7.0 (Thu Dec 15 2022)
 
 #### 🚀 Enhancement
