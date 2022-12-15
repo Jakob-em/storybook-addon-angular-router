@@ -1,3 +1,15 @@
+# v1.7.0 (Thu Dec 15 2022)
+
+#### 🚀 Enhancement
+
+- Update to angular 15 [#16](https://github.com/Jakob-em/storybook-addon-angular-router/pull/16) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.6.0 (Fri Jul 01 2022)
 
 #### 🚀 Enhancement
