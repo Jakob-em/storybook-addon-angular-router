@@ -36,7 +36,11 @@
           }
         },
         "build-storybook": {
-          "builder": "@storybook/angular:build-storybook"
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "tsConfig": "tsconfig.json",
+            "compodoc": false
+          }
         }
       }
     }
