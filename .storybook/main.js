@@ -1,6 +1,7 @@
 module.exports = {
+    framework: '@storybook/angular',
     core: {
-      builder: 'webpack5',
+        builder: 'webpack5',
     },
     stories: [
         "../stories/**/*.stories.mdx",

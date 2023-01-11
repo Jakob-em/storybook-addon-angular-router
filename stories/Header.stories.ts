@@ -1,5 +1,5 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
-import {Meta, Story} from '@storybook/angular/types-6-0';
+import {Meta, StoryFn} from '@storybook/angular';
 import Header from './header.component';
 
 export default {
@@ -14,7 +14,7 @@ export default {
     }
 } as Meta;
 
-const Template: Story<Header> = (args: Header) => ({
+const Template: StoryFn<Header> = (args: Header) => ({
     props: args,
 });
 

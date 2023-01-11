@@ -1,5 +1,5 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
-import {Meta, Story} from '@storybook/angular/types-6-0';
+import {Meta, StoryFn} from '@storybook/angular';
 import Button from './button.component';
 import {moduleMetadata} from '@storybook/angular';
 import {RouterTestingModule} from '@angular/router/testing';
@@ -12,7 +12,7 @@ export default {
     }
 } as Meta;
 
-const Template: Story<Button> = (args: Button) => ({
+const Template: StoryFn<Button> = (args: Button) => ({
     props: args,
 });
 
