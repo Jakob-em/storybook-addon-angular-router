@@ -1,3 +1,18 @@
+# v1.8.0 (Sat Apr 01 2023)
+
+#### 🚀 Enhancement
+
+- Upgrade node in CI to 18 [#19](https://github.com/Jakob-em/storybook-addon-angular-router/pull/19) ([@Jakob-em](https://github.com/Jakob-em))
+- Upgrade to storybook 7.0.0 [#19](https://github.com/Jakob-em/storybook-addon-angular-router/pull/19) ([@Jakob-em](https://github.com/Jakob-em))
+- Fix build config [skip-ci] [#19](https://github.com/Jakob-em/storybook-addon-angular-router/pull/19) ([@Jakob-em](https://github.com/Jakob-em))
+- Update to storybook v7 beta [#19](https://github.com/Jakob-em/storybook-addon-angular-router/pull/19) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.7.1 (Thu Dec 15 2022)
 
 #### 🐛 Bug Fix
