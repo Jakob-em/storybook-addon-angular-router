@@ -3,7 +3,7 @@ import {Router} from "@angular/router";
 import {ActionLoggingRouter} from "./actionLoggingRouter";
 import {RouterTestingModule} from "@angular/router/testing";
 import {ADDON_ID} from "./constants";
-import {makeDecorator} from "@storybook/addons";
+import {makeDecorator} from "@storybook/preview-api";
 
 
 export const withAngularRouter = makeDecorator({

@@ -1,4 +1,5 @@
-module.exports = {
+/** @type { import('@storybook/react-vite').StorybookConfig } */
+const config = {
     framework: '@storybook/angular',
     core: {
         builder: 'webpack5',
@@ -14,3 +15,5 @@ module.exports = {
         "@storybook/addon-actions",
     ],
 };
+
+export default config
