@@ -1,3 +1,5 @@
+// noinspection ES6UnusedImports
+import polyfill from "./polyfill"
 import {moduleMetadata} from "@storybook/angular";
 import {Router} from "@angular/router";
 import {ActionLoggingRouter} from "./actionLoggingRouter";
