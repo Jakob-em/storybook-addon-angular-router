@@ -6,6 +6,6 @@ const config = {
   },
   core: {},
   stories: ["../stories/**/*.stories.mdx", "../stories/**/*.stories.@(js|jsx|ts|tsx)"],
-  addons: ["../preset.js", "@storybook/addon-docs", "@storybook/addon-controls", "@storybook/addon-actions", "@storybook/addon-mdx-gfm"]
+  addons: ["../preset.js", "@storybook/addon-docs", "@storybook/addon-controls", "@storybook/addon-actions"]
 };
 export default config;
