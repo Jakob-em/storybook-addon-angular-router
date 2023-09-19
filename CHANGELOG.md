@@ -1,3 +1,17 @@
+# v1.9.1 (Tue Sep 19 2023)
+
+#### 🐛 Bug Fix
+
+- Polyfill testing methods [#23](https://github.com/Jakob-em/storybook-addon-angular-router/pull/23) ([@Jakob-em](https://github.com/Jakob-em))
+- Update to angular 16.2 [#23](https://github.com/Jakob-em/storybook-addon-angular-router/pull/23) ([@Jakob-em](https://github.com/Jakob-em))
+- Upgrade storybook to 7.3.1 [#23](https://github.com/Jakob-em/storybook-addon-angular-router/pull/23) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.9.0 (Wed May 17 2023)
 
 #### 🚀 Enhancement
