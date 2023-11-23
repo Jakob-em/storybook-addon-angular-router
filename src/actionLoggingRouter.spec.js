@@ -59,6 +59,14 @@ describe('ActionLoggingRouter', () => {
             )).toBe(true)
         });
 
+        it('should be active when exact and routes match with options', () => {
+            expect(router.isActive(
+                {commands: ['path', 'nested']},
+                {paths: 'exact', queryParams: 'exact', fragment: 'ignored', matrixParams: 'ignored'}
+            )).toBe(true)
+        });
+
+
         it('should be active when not exact and routes match', () => {
             expect(router.isActive(
                 {commands: ['path', 'nested']},
@@ -84,6 +92,13 @@ describe('ActionLoggingRouter', () => {
             expect(router.isActive(
                 {commands: ['path', 'nested', 'deep']},
                 false
+            )).toBe(true)
+        });
+
+        it('should be active when not exact and routes match partly with options', () => {
+            expect(router.isActive(
+                {commands: ['path', 'nested', 'deep']},
+                {paths: 'subset', queryParams: 'exact', fragment: 'ignored', matrixParams: 'ignored'}
             )).toBe(true)
         });
 
