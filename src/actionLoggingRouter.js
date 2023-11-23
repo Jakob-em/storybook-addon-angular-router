@@ -32,11 +32,11 @@ export class ActionLoggingRouter {
         return {commands, extras};
     }
 
-    isActive(tree, excact) {
+    isActive(tree, matchOptions) {
         if (!this.activePath) {
             return false
         }
-        if (excact) {
+        if (matchOptions && (typeof matchOptions === 'boolean' || matchOptions.paths === 'exact')) {
             return this._joinCommands(tree) === this.activePath
         }
         return this._joinCommands(tree).startsWith(this.activePath);
@@ -54,6 +54,9 @@ export class ActionLoggingRouter {
     }
 
     _joinCommands(tree) {
+        if(typeof tree === 'string') {
+            return tree;
+        }
         return tree.commands.join('/');
     }
 
