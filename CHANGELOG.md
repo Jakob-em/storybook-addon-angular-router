@@ -1,3 +1,15 @@
+# v1.9.2 (Sun Dec 17 2023)
+
+#### 🐛 Bug Fix
+
+- Add missing isActive overloads [#25](https://github.com/Jakob-em/storybook-addon-angular-router/pull/25) ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 1
+
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.9.1 (Tue Sep 19 2023)
 
 #### 🐛 Bug Fix
