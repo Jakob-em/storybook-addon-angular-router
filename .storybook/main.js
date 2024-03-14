@@ -4,8 +4,20 @@ const config = {
     name: "@storybook/angular",
     options: {}
   },
+
   core: {},
-  stories: ["../stories/**/*.stories.mdx", "../stories/**/*.stories.@(js|jsx|ts|tsx)"],
-  addons: ["../preset.js", "@storybook/addon-docs", "@storybook/addon-controls", "@storybook/addon-actions"]
+  stories: ["../stories/**/*.mdx", "../stories/**/*.stories.@(js|jsx|ts|tsx)"],
+
+  addons: [
+    "../preset.js",
+    "@storybook/addon-docs",
+    "@storybook/addon-controls",
+    "@storybook/addon-actions",
+    "@storybook/addon-mdx-gfm"
+  ],
+
+  docs: {
+    autodocs: true
+  }
 };
 export default config;
