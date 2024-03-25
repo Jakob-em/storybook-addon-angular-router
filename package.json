@@ -80,5 +80,11 @@
     "supportedFrameworks": [
       "angular"
     ]
+  },
+  "auto": {
+    "author": {
+      "name": "Jakob-Em",
+      "email": "26389546+Jakob-em@users.noreply.github.com>"
+    }
   }
 }
