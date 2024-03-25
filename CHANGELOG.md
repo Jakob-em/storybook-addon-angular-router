@@ -1,3 +1,22 @@
+# v1.10.0 (Mon Mar 25 2024)
+
+#### 🚀 Enhancement
+
+- Update storybook to 8.0.4 [#28](https://github.com/Jakob-em/storybook-addon-angular-router/pull/28) ([@Jakob-em](https://github.com/Jakob-em))
+- Updated Storybook packages and setup to use the new mdx setup [#28](https://github.com/Jakob-em/storybook-addon-angular-router/pull/28) ([@thebspin](https://github.com/thebspin))
+
+#### ⚠️ Pushed to `main`
+
+- Fix auto author ([@Jakob-em](https://github.com/Jakob-em))
+- Fix dependencies ([@Jakob-em](https://github.com/Jakob-em))
+
+#### Authors: 2
+
+- Dennis Keirsgieter ([@thebspin](https://github.com/thebspin))
+- Jakob ([@Jakob-em](https://github.com/Jakob-em))
+
+---
+
 # v1.9.2 (Sun Dec 17 2023)
 
 #### 🐛 Bug Fix
