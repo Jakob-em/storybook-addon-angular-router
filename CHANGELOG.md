@@ -1,3 +1,15 @@
+# v1.10.1 (Mon Oct 21 2024)
+
+#### 🐛 Bug Fix
+
+- fix preset/manager.js manager-entries failed [#32](https://github.com/Jakob-em/storybook-addon-angular-router/pull/32) ([@gnikolaos](https://github.com/gnikolaos))
+
+#### Authors: 1
+
+- Nikolaos Georgiou ([@gnikolaos](https://github.com/gnikolaos))
+
+---
+
 # v1.10.0 (Mon Mar 25 2024)
 
 #### 🚀 Enhancement
